@@ -34,6 +34,7 @@ import AdminOrderDetailsPage from "./pages/admin/AdminOrderDetailsPage";
 import AdminChatsPage from "./pages/admin/AdminChatsPage";
 import AdminAnalyticsPage from "./pages/admin/AdminAnalyticsPage";
 import ScrollToTop from "./utils/ScrollToTop";
+import AdminCreateCategoryPage from "./pages/admin/AdminCreateCategoryPage";
 
 function App() {
   return (
@@ -97,6 +98,10 @@ function App() {
           <Route path="/admin/users" element={<AdminUsersPage />} />
           <Route path="/admin/edit-user/:id" element={<AdminEditUserPage />} />
           <Route path="/admin/products" element={<AdminProductsPage />} />
+          <Route
+            path="/admin/categories"
+            element={<AdminCreateCategoryPage />}
+          />
           <Route
             path="/admin/create-new-product"
             element={<AdminCreateProductPage />}
